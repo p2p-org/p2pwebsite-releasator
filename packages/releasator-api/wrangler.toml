@@ -20,10 +20,6 @@ database_id = "c0da4b5b-c1c4-405a-a0a5-cf3b999a540e"
 # if you are planing to deploy your worker manually, store all secret vars here, it's safe
 # if you're using CI, like GitHub, remove `wrangler.toml` from gitignore and use secrets to pass them cia env vars
 # https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions
-AUTH_SUPER_TOKEN = '' # provide with a custom token, used by github workflows to send releases from repos
-GITHUB_TOKEN = '' # provide with fine-grained github token allowed to read commits, metadata and pull-requests from target repos
-SLACK_ADMIN_CHANNEL_WEBHOOK = '' # provide with webhook allowed to send messages to targer release notes channel
-SLACK_NOTIFICATIONS_CHANNEL_WEBHOOK = '' # same but for service admins, will post release notes right after creation with and edit link
 
 # non-secret vars below
 DB_HOURS_OFFSET = 0 # left with 0 if your db server have correct date and time configuration
