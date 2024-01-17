@@ -20,7 +20,7 @@ jobs:
       - name: Send POST request
         uses: fjogeleit/http-request-action@master
         with:
-          url: 'https://YOUR-API-ROOT' # change this with your API root url
+          url: 'https://releasator-api-my.ru-web-designer.workers.dev'
           method: 'POST'
           timeout: 120000
           contentType: 'application/json'
