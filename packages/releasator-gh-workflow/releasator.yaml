@@ -35,7 +35,7 @@ jobs:
         if: steps.check_tag.outputs.tag_valid == 'true'
         uses: fjogeleit/http-request-action@master
         with:
-          url: 'https://releasator-api-my.ru-web-designer.workers.dev'
+          url: 'https://releasator-api-my.ru-web-designer.workers.dev/api/releases'
           method: 'POST'
           timeout: 120000
           contentType: 'application/json'
